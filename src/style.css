@@ -1,0 +1,159 @@
+html {
+    /* default = 16px */
+    font-size: 100%;
+}
+
+body {
+    color: #242924;
+    font-family: "Zen Maru Gothic", serif;
+}
+
+a {
+    /* リンクの下線削除 */
+    text-decoration: none;
+}
+
+p {
+    /* htmlで指定したサイズの1.3倍の文字サイズにする。 */
+    /* ルートmの略 */
+    font-size: 1.3rem;
+}
+
+img {
+    /* スマホなどの画面が小さい場合でも縮小されるらしい */
+    max-width: 100%;
+}
+
+li {
+    /* リストの点を削除 */
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.wapper {
+    max-width: 960px;
+    /* 上右下左の時計周りで指定できる */
+    margin: 0 auto 130px auto;
+    font-size: 0.9rem;
+    /* 上下が0 左右が全体の4% */
+    padding: 0 4%;
+}
+
+.site-title {
+    line-height: 1px;
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+.site-title a {
+    color: #24292e;
+}
+
+.sec-title{
+    /* 16px * 1.5 = 24px */
+    font-size: 1.5rem;
+    /* 中央寄せ */
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+
+#header {
+    max-width: 960px;
+    /* ブロック要素を横並びにする。 */
+    display: flex;
+    /* 縦軸でセンターにする。 */
+    align-items: center;
+    /* 両側に寄せて配置する */
+    /* ブロック要素で均等に間を開けるが正しいかな */
+    justify-content: space-between;
+    /* margin 上下のが0 左右が均等で余白*/
+    margin: 0 auto;
+    /* marginはブロック要素の話paddingはブロック要素ないの余白の話 */
+    /* 4%で上下左右に全体幅の4パーセントは余白を作る設定 */
+    padding: 4%;
+    /* topからの離れ */
+    height: 170px;
+}
+
+#header ul {
+    /* ブロック要素を横並びにする */
+    display: flex;
+    /* 縦軸でセンターに合わせる */
+    align-items: center;
+    /* 上下方向に10px開けて左右は0 */
+    padding: 10px 0;
+}
+
+#header ul li {
+    font-size: 0.9rem;
+    /* 左側を開ける */
+    margin-left: 20px
+}
+
+#header ul li a {
+    color: #24292e;
+    /* イベントまでの時間? */
+    transition: all 0.3s;
+}
+
+#header ul li:hover {
+    /* 透明度を半分にする */
+    opacity: 0.5;
+}
+
+#header li img {
+    width: 30px;
+}
+
+#main {
+    margin-bottom: 80px;
+}
+
+#main img {
+    /* 画面サイズにいっぱいに合わせる */
+    width: 100%;
+    max-width: 1920px;
+    /* ブロック要素の高さを設定する */
+    height: 300px;
+    /* サイズを指定した大きさに合わせてその他を隠す */
+    object-fit: cover;
+}
+
+#about ul {
+    margin-bottom: 30px;
+}
+
+#about ul li{
+    margin-bottom: 3px;
+}
+
+#about ul li :first-child{
+    margin-bottom: 30px;
+}
+
+
+/* responsib */
+/* sp */
+@media screen and (max-width: 600px) {
+    .site-title {
+        margin-top: 20px;
+    }
+
+    #header {
+        flex-direction: column;
+        height: auto;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+
+    #header li {
+        font-size: 0.8rem;
+        margin-left: 20px;
+    }
+
+    #header li img {
+        width: 20px;
+        padding-top: 15px;
+    }
+}

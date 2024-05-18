@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- viewportのwidthで画面いっぱいに表示する設定をしている -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LPの練習">
+    <!-- reset.css ress -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <!-- fornt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&family=Zen+Maru+Gothic&display=swap"
+        rel="stylesheet">
+    <title>LP</title>
+</head>
+
+<body>
+    <header id="header">
+        <!-- 通常h1等のブロック要素は縦並びになる。 -->
+        <h1 class="site-title">
+            <a href="">takico</a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#about">about</a></li>
+                <li><a href="#works">about</a></li>
+                <li><a href="#news">about</a></li>
+                <li><a href="#contact">about</a></li>
+                <li>
+                    <!-- refrrerを消す -->
+                    <a href="https://www.twitter.com" target="_blank" rel="noopner noreferrer">
+                        <img src="../img/twitter.png" alt="twitter">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main">
+        <picture>
+            <!-- sp -->
+            <source media="(max-width: 600px)" srcset="../img/main-sp.jpg">
+            <!-- pc -->
+            <img src="../img/main-pc.jpg" alt="">
+        </picture>
+    </div>
+    <section class="wapper" id="about">
+        <h2 class="sec-title">About</h2>
+        <ul>
+            <li>takico</li>
+            <li>web制作会社として設立</li>
+            <li>webサイト・アプリ開発承ります</li>
+            <li>mail:xxxxxx@xxxx.com</li>
+        </ul>
+        <p>
+            webサイトの制作やアプリ開発を得意とします。
+        </p>
+    </section>
+    <section id="works" class="wapper">
+        <h2 class="sec-title">Works</h2>
+    </section>
+</body>
+
+</html>
